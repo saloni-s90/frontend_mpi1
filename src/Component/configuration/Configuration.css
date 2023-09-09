@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+.form-configuration{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.config{
+    margin-left: 30% ;
+    font-style: oblique;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    font-family: 'Roboto Slab', serif;
+}
