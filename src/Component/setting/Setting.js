@@ -9,7 +9,7 @@ function Setting() {
                 Settings
             </h2>
 
-<SettingNav />
+            <SettingNav />
             <div className='mt-4'>
                 <h4 className='sub-header'>Options of Input/Output </h4>
             </div>
