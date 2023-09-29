@@ -1,18 +1,21 @@
 import React from 'react'
+import './Setting.css'
+import SettingNav from './SettingNav'
 
 function Setting() {
     return (
-        <div>
-            <h2>
+        <div className='form-configuration'>
+            <h2 className='header-title'>
                 Settings
             </h2>
 
+<SettingNav />
             <div className='mt-4'>
-                <h4>Options of Input/Output </h4>
+                <h4 className='sub-header'>Options of Input/Output </h4>
             </div>
 
             <div>
-                <b>Volt</b>
+                <b className=''>Volt</b>
                 <div class="form-check form-check-inline ms-4">
                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
                     <label class="form-check-label" for="inlineCheckbox1">Min</label>
@@ -60,10 +63,10 @@ function Setting() {
             </div>
 
             <div className='mt-3'>
-                <h4>Cycle Reminder</h4>
+                <h4 className='sub-header'>Cycle Reminder</h4>
             </div>
             <div>
-                User Alert
+                <b> User Alert </b>
                 <div class="form-check form-check-inline ms-4">
                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
                     <label class="form-check-label" for="inlineCheckbox1">Mobile</label>
@@ -75,7 +78,7 @@ function Setting() {
             </div>
 
             <div>
-                Input/Output Alert
+                <b>Input/Output Alert</b>
                 <div class="form-check form-check-inline ms-4">
                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
                     <label class="form-check-label" for="inlineCheckbox1">SMS</label>
@@ -91,7 +94,7 @@ function Setting() {
             </div>
 
             <div className='mt-3'>
-                <h4> Cycle Reminder </h4>
+                <h4 className='sub-header'> Cycle Reminder </h4>
                 <div class="form-check form-switch">
                     <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                     <label class="form-check-label" for="flexSwitchCheckDefault">Reminder</label>
@@ -99,9 +102,9 @@ function Setting() {
             </div>
 
             <div>
-                <h5>Status</h5>
+                <h4 className='sub-header'>Status</h4>
 
-                <div class="dropdown">
+                <div class="dropdown btn-drop">
                     channel
                     <button class="btn btn-secondary dropdown-toggle ms-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         channel
@@ -129,7 +132,7 @@ function Setting() {
                 </div>
             </div>
 
-            <button type="button" className="btn btn-outline-primary bt">Save</button>
+            <button type="button" className="btn btn-outline-primary btn-save">Save</button>
             <button type="button" className="btn btn-outline-danger bt">Cancel</button>
 
 

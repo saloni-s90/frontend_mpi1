@@ -1,9 +1,12 @@
 import React from 'react'
+import './billing.css'
 
 function Billing() {
   return (
-    <div>
-      <h2> Billing Cycle </h2>
+    <div className="display">
+    <div className='form-configuration'>
+      <h2 className='header-title'> Billing Cycle </h2>
+
       <div className="input-group mb-3">
         <span className="input-group-text">@</span>
         <div className="form-floating">
@@ -20,9 +23,9 @@ function Billing() {
         </div>
       </div>
 
-      <button type="button" className="btn btn-outline-primary">Save</button>
+      <button type="button" className="btn btn-outline-primary btn-save">Save</button>
       <button type="button" className="btn btn-outline-danger">Cancel</button>
-      
+      </div>
     </div>
   )
 }

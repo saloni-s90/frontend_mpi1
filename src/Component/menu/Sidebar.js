@@ -3,9 +3,8 @@ import './Sidebar.css'
 import { NavLink } from 'react-router-dom';
 
 import {FaBars} from "react-icons/fa";
-import {AiFillSetting} from "react-icons/ai"
+import {AiFillSetting,AiFillInteraction} from "react-icons/ai"
 import {MdAdminPanelSettings,MdPayments} from "react-icons/md"
-import {FcDataConfiguration} from "react-icons/fc"
 
 
 const Sidebar = ({children}) => {
@@ -16,7 +15,7 @@ const Sidebar = ({children}) => {
         {
             path:"/",
             name:"Configuration",
-            icon:<FcDataConfiguration/>
+            icon:<AiFillInteraction/>
         },
         {
             path:"/billing",
@@ -39,7 +38,9 @@ const Sidebar = ({children}) => {
         <div className="cont">
            <div style={{width: isOpen ? "230px" : "60px"}} className="sidebar">
                <div className="top_section">
-                   <h1 style={{display: isOpen ? "block" : "none"}} className="logo"><i>MPI</i>|<sup>Automotive </sup></h1>
+                   <h1 style={{display: isOpen ? "block" : "none"}} className="logo">
+                        <i>MPI</i>|<sup>Automotive </sup>
+                   </h1>
                    <div style={{marginLeft: isOpen ? "190px" : "0px"}} className="bars">
                        <FaBars onClick={toggle}></FaBars> 
                    </div>

@@ -33,9 +33,9 @@ const AddUser = async () => {
 
 
   return (
-    <div>
+    <div className='display'>
       <form className='form-configuration'>
-        <h1 className='config'>Configuration</h1>
+        <h1 className='header-title'>Configuration</h1>
 
         <div className="input-group mb-3">
           <span className="input-group-text"><PiIdentificationBadgeFill /></span>

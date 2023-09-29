@@ -5,11 +5,16 @@
     margin-right: 10%;
 }
 
-.config{
-    margin-left: 30% ;
+.header-title{
+    margin-left: 25% ;
     font-style: oblique;
     text-transform: uppercase;
     margin-bottom: 5%;
     margin-top: 2%;
     font-family: 'Roboto Slab', serif;
+}
+
+.display{
+    height: 100%;
+    background: linear-gradient(white, cyan , blue);
 }

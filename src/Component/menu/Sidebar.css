@@ -19,6 +19,7 @@
     height: 100vh;
     width: 500px;
     transition: all 0.5s;
+    
   }
   
   .top-section{
@@ -30,7 +31,7 @@
   .logo{
     font-size: 35px;
     font-variant-caps: all-small-caps;
-    color: rgb(0, 155, 252);;
+    color: blue;;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: oblique;
     margin-left: 10px;
@@ -55,6 +56,7 @@
     padding: 10px 15px;
     gap: 15px;
     transition: all 0.5s;
+    text-decoration: none;
   }
   
   .link:hover{

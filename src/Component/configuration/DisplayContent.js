@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import axios from 'axios'
+
 import { getUsers } from '../service/app'
 
 function DisplayContent() {
@@ -16,7 +16,8 @@ function DisplayContent() {
   }
 
   return (
-    <div>
+    <div className="display">
+    <div className='form-configuration'>
       <table className='table'>
         <thead>
           <tr>
@@ -42,7 +43,7 @@ function DisplayContent() {
         </tbody>
 
       </table>
-
+      </div>
     </div>
   )
 }
