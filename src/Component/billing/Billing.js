@@ -23,8 +23,8 @@ function Billing() {
         </div>
       </div>
 
-      <button type="button" className="btn btn-outline-primary btn-save">Save</button>
-      <button type="button" className="btn btn-outline-danger">Cancel</button>
+      <button type="button" className="btn-save">Save</button>
+      <button type="button" className="btn-cancel">Cancel</button>
       </div>
     </div>
   )

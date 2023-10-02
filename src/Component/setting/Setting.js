@@ -1,15 +1,15 @@
 import React from 'react'
 import './Setting.css'
-import SettingNav from './SettingNav'
 
 function Setting() {
     return (
+        <div className=''>
         <div className='form-configuration'>
             <h2 className='header-title'>
                 Settings
             </h2>
 
-            <SettingNav />
+
             <div className='mt-4'>
                 <h4 className='sub-header'>Options of Input/Output </h4>
             </div>
@@ -132,10 +132,10 @@ function Setting() {
                 </div>
             </div>
 
-            <button type="button" className="btn btn-outline-primary btn-save">Save</button>
+            <button type="button" className="btn-save">Save</button>
             <button type="button" className="btn btn-outline-danger bt">Cancel</button>
 
-
+            </div>
         </div>
     )
 }

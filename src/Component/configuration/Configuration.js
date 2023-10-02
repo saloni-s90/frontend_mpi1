@@ -77,7 +77,7 @@ const AddUser = async () => {
           </div>
         </div>
 
-        <button type="button" className="btn btn-outline-primary" onClick={AddUser}>Save</button>
+        <button type="button" className="btn-save" onClick={AddUser}>Save</button>
 
       </form>
     </div>

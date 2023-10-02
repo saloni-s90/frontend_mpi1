@@ -1,6 +1,6 @@
-import React,{useState,useEffect} from 'react'
-
-import { getUsers } from '../service/app'
+import React, { useState, useEffect } from 'react'
+import './DisplayContent.css'
+import { getUsers } from '../service/app' 
 
 function DisplayContent() {
   const [configuration, setUser] = useState([])
@@ -17,32 +17,32 @@ function DisplayContent() {
 
   return (
     <div className="display">
-    <div className='form-configuration'>
-      <table className='table'>
-        <thead>
-          <tr>
-            <th>Site ID</th>
-            <th>Esim</th>
-            <th>Customer Name</th>
-            <th>Device id</th>
-          </tr>
-        </thead>
+      <div className='form__display'>
+        <table className='table tab1'>
+          <thead>
+            <tr>
+              <th>Site ID</th>
+              <th>Esim</th>
+              <th>Customer Name</th>
+              <th>Device id</th>
+            </tr>
+          </thead>
 
-        <tbody>
-          {
-            configuration.map((user) => {
-              return <tr>
-                <td>{user.siteid}</td>
-                <td>{user.esim}</td>
-                <td>{user.cname}</td>
-                <td>{user.device}</td>
-                
-              </tr>
-            })
-          }
-        </tbody>
+          <tbody>
+            {
+              configuration.map((user) => {
+                return <tr>
+                  <td>{user.siteid}</td>
+                  <td>{user.esim}</td>
+                  <td>{user.cname}</td>
+                  <td>{user.device}</td>
 
-      </table>
+                </tr>
+              })
+            }
+          </tbody>
+
+        </table>
       </div>
     </div>
   )
